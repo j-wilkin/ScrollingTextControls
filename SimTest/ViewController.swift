@@ -15,8 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     
     var text = [
-        "Hey there. Here is a test of the text box!",
-        "Here's some more text to test.",
+        "Line 1: Hey there. Here is a test of the text box!",
+        "Line 2: Here's some more text to test.",
+        "Line 3: Hey there. Here is a test of the text box!",
+        "Line 4: Here's some more text to test.",
+        "Line 5: Hey there. Here is a test of the text box!",
+        "Line 6: Here's some more text to test.",
         "This is the last line!!!"
     ]
     var currentLineIndex = 0
@@ -42,14 +46,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func nextButtonTap(sender: UIButton) {
-        if currentLineIndex < text.count {
+        if self.currentCharIndex < text[currentLineIndex].characters.count {
+            finishLine()
+        }
+        else if currentLineIndex < text.count {
             currentLineIndex += 1
             currentCharIndex = 0
             fetchNextCharacter()
         }
     }
 
-    
+    func finishLine() {
+        self.textBox.text = text[currentLineIndex]
+        currentCharIndex = text[currentLineIndex].characters.count
+    }
     
     func fetchNextCharacter() {
         if currentLineIndex == text.count {
@@ -60,26 +70,29 @@ class ViewController: UIViewController {
         let currentLine = text[currentLineIndex]
         if currentCharIndex > currentLine.characters.count {
             // Advance to the next line
-            //currentLineIndex += 1
-            currentCharIndex = 0
             return
         }
         
         // Update textBox
         let index = currentLine.startIndex.advancedBy(currentCharIndex)
-        updateTextBoxAfterDelay(currentLine.substringToIndex(index), waitTime: 0.1)
+        updateTextBoxAfterDelay(currentLine.substringToIndex(index), waitTime: 0.05, lineNumber: currentLineIndex)
     }
     
     
-    func updateTextBoxAfterDelay(str: String, waitTime: NSTimeInterval) {
+    func updateTextBoxAfterDelay(str: String, waitTime: NSTimeInterval, lineNumber: Int) {
         
         let delay = waitTime * Double(NSEC_PER_SEC)
         let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         
         dispatch_after(dispatchTime, dispatch_get_main_queue()) { () -> Void in
-            self.textBox.text = str
-            self.currentCharIndex += 1
-            self.fetchNextCharacter()
+            
+            let lineFinished = self.textBox.text == self.text[lineNumber]
+            // Ensure we are still printing the same line and that the line has not been completed
+            if self.currentLineIndex == lineNumber && !lineFinished {
+                self.textBox.text = str
+                self.currentCharIndex += 1
+                self.fetchNextCharacter()
+            }
         }
         
     }
