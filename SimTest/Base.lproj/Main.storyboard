@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sXH-fk-dhm">
+                    <view key="view" contentMode="scaleToFill" id="sXH-fk-dhm" customClass="ScrollingTextView" customModule="SimTest" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -31,22 +31,25 @@
                                 <rect key="frame" x="532" y="539" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="nextButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQ2-qH-Fzs"/>
+                                    <action selector="nextButtonTap:" destination="sXH-fk-dhm" eventType="touchUpInside" id="0Dl-fL-gmK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.73484538610000005" green="0.73484538610000005" blue="0.73484538610000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xKb-hT-NYh" secondAttribute="bottom" constant="31" id="8OM-pl-IJU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xKb-hT-NYh" secondAttribute="trailing" constant="9" id="9V3-5x-XE0"/>
                             <constraint firstItem="xKb-hT-NYh" firstAttribute="leading" secondItem="sXH-fk-dhm" secondAttribute="leadingMargin" constant="10" id="coY-k4-8YL"/>
                             <constraint firstItem="Sjf-q1-ZjL" firstAttribute="bottom" secondItem="xKb-hT-NYh" secondAttribute="bottom" id="gHa-SC-qiI"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xKb-hT-NYh" secondAttribute="bottom" constant="31" id="tBR-7u-zoG"/>
                             <constraint firstItem="Sjf-q1-ZjL" firstAttribute="leading" secondItem="xKb-hT-NYh" secondAttribute="trailing" constant="-39" id="woh-yf-xmV"/>
                         </constraints>
+                        <connections>
+                            <outlet property="nextButton" destination="Sjf-q1-ZjL" id="wfX-b2-ckI"/>
+                            <outlet property="textBox" destination="xKb-hT-NYh" id="s5k-EV-Xk7"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="Sjf-q1-ZjL" id="FWi-vr-y1b"/>
-                        <outlet property="textBox" destination="xKb-hT-NYh" id="uad-bU-dDd"/>
+                        <outlet property="textView" destination="sXH-fk-dhm" id="g1w-AB-dNx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
