@@ -18,7 +18,7 @@ class ScrollingTextView: UIView {
     var lines = [String]()
     var currentLineIndex = 0
     var currentCharIndex = 0
-    
+    let waitTime = 0.05
     
     override func awakeFromNib() {
         self.textBox.text = ""
@@ -32,10 +32,12 @@ class ScrollingTextView: UIView {
     
     @IBAction func nextButtonTap(sender: UIButton) {
         if currentLineIndex == lines.count {
+            // No more lines to print
             return
         }
         
         if self.currentCharIndex < lines[currentLineIndex].characters.count {
+            // Finish off the current line
             finishLine()
         }
         else if currentLineIndex < lines.count {
@@ -64,11 +66,11 @@ class ScrollingTextView: UIView {
         
         // Update textBox
         let index = currentLine.startIndex.advancedBy(currentCharIndex)
-        updateTextBoxAfterDelay(currentLine.substringToIndex(index), waitTime: 0.05, lineNumber: currentLineIndex)
+        updateTextBoxAfterDelay(currentLine.substringToIndex(index), lineNumber: currentLineIndex)
     }
     
     
-    func updateTextBoxAfterDelay(str: String, waitTime: NSTimeInterval, lineNumber: Int) {
+    func updateTextBoxAfterDelay(str: String, lineNumber: Int) {
         
         let delay = waitTime * Double(NSEC_PER_SEC)
         let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
@@ -87,17 +89,5 @@ class ScrollingTextView: UIView {
         
     }
     
-    
-    // http://stackoverflow.com/questions/24034544/dispatch-after-gcd-in-swift/24318861#24318861
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
-    }
-    
-
     
 }

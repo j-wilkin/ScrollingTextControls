@@ -36,17 +36,17 @@
 
 /* Begin PBXFileReference section */
 		E05C6CDA1C67DF61004699F3 /* ScrollingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTextView.swift; sourceTree = "<group>"; };
-		E0D3DD941C6573500049BF49 /* SimTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D3DD941C6573500049BF49 /* GameControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D3DD971C6573500049BF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0D3DD991C6573500049BF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0D3DD9C1C6573500049BF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0D3DD9E1C6573500049BF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0D3DDA11C6573500049BF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0D3DDA31C6573500049BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0D3DDA81C6573500049BF49 /* SimTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D3DDA81C6573500049BF49 /* GameControls.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControls.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D3DDAC1C6573500049BF49 /* SimTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimTestTests.swift; sourceTree = "<group>"; };
 		E0D3DDAE1C6573500049BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0D3DDB31C6573500049BF49 /* SimTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D3DDB31C6573500049BF49 /* GameControls.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControls.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D3DDB71C6573500049BF49 /* SimTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimTestUITests.swift; sourceTree = "<group>"; };
 		E0D3DDB91C6573500049BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,9 +97,9 @@
 		E0D3DD951C6573500049BF49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0D3DD941C6573500049BF49 /* SimTest.app */,
-				E0D3DDA81C6573500049BF49 /* SimTestTests.xctest */,
-				E0D3DDB31C6573500049BF49 /* SimTestUITests.xctest */,
+				E0D3DD941C6573500049BF49 /* GameControls.app */,
+				E0D3DDA81C6573500049BF49 /* GameControls.xctest */,
+				E0D3DDB31C6573500049BF49 /* GameControls.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E0D3DD931C6573500049BF49 /* SimTest */ = {
+		E0D3DD931C6573500049BF49 /* GameControls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0D3DDBC1C6573500049BF49 /* Build configuration list for PBXNativeTarget "SimTest" */;
+			buildConfigurationList = E0D3DDBC1C6573500049BF49 /* Build configuration list for PBXNativeTarget "GameControls" */;
 			buildPhases = (
 				E0D3DD901C6573500049BF49 /* Sources */,
 				E0D3DD911C6573500049BF49 /* Frameworks */,
@@ -151,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = SimTest;
+			name = GameControls;
 			productName = SimTest;
-			productReference = E0D3DD941C6573500049BF49 /* SimTest.app */;
+			productReference = E0D3DD941C6573500049BF49 /* GameControls.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E0D3DDA71C6573500049BF49 /* SimTestTests */ = {
+		E0D3DDA71C6573500049BF49 /* GameControlsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0D3DDBF1C6573500049BF49 /* Build configuration list for PBXNativeTarget "SimTestTests" */;
+			buildConfigurationList = E0D3DDBF1C6573500049BF49 /* Build configuration list for PBXNativeTarget "GameControlsTests" */;
 			buildPhases = (
 				E0D3DDA41C6573500049BF49 /* Sources */,
 				E0D3DDA51C6573500049BF49 /* Frameworks */,
@@ -169,14 +169,14 @@
 			dependencies = (
 				E0D3DDAA1C6573500049BF49 /* PBXTargetDependency */,
 			);
-			name = SimTestTests;
+			name = GameControlsTests;
 			productName = SimTestTests;
-			productReference = E0D3DDA81C6573500049BF49 /* SimTestTests.xctest */;
+			productReference = E0D3DDA81C6573500049BF49 /* GameControls.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E0D3DDB21C6573500049BF49 /* SimTestUITests */ = {
+		E0D3DDB21C6573500049BF49 /* GameControlsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0D3DDC21C6573500049BF49 /* Build configuration list for PBXNativeTarget "SimTestUITests" */;
+			buildConfigurationList = E0D3DDC21C6573500049BF49 /* Build configuration list for PBXNativeTarget "GameControlsUITests" */;
 			buildPhases = (
 				E0D3DDAF1C6573500049BF49 /* Sources */,
 				E0D3DDB01C6573500049BF49 /* Frameworks */,
@@ -187,9 +187,9 @@
 			dependencies = (
 				E0D3DDB51C6573500049BF49 /* PBXTargetDependency */,
 			);
-			name = SimTestUITests;
+			name = GameControlsUITests;
 			productName = SimTestUITests;
-			productReference = E0D3DDB31C6573500049BF49 /* SimTestUITests.xctest */;
+			productReference = E0D3DDB31C6573500049BF49 /* GameControls.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,6 +204,7 @@
 				TargetAttributes = {
 					E0D3DD931C6573500049BF49 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 332EEVL6CJ;
 					};
 					E0D3DDA71C6573500049BF49 = {
 						CreatedOnToolsVersion = 7.2;
@@ -215,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E0D3DD8F1C6573500049BF49 /* Build configuration list for PBXProject "SimTest" */;
+			buildConfigurationList = E0D3DD8F1C6573500049BF49 /* Build configuration list for PBXProject "GameControls" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0D3DD931C6573500049BF49 /* SimTest */,
-				E0D3DDA71C6573500049BF49 /* SimTestTests */,
-				E0D3DDB21C6573500049BF49 /* SimTestUITests */,
+				E0D3DD931C6573500049BF49 /* GameControls */,
+				E0D3DDA71C6573500049BF49 /* GameControlsTests */,
+				E0D3DDB21C6573500049BF49 /* GameControlsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,12 +295,12 @@
 /* Begin PBXTargetDependency section */
 		E0D3DDAA1C6573500049BF49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E0D3DD931C6573500049BF49 /* SimTest */;
+			target = E0D3DD931C6573500049BF49 /* GameControls */;
 			targetProxy = E0D3DDA91C6573500049BF49 /* PBXContainerItemProxy */;
 		};
 		E0D3DDB51C6573500049BF49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E0D3DD931C6573500049BF49 /* SimTest */;
+			target = E0D3DD931C6573500049BF49 /* GameControls */;
 			targetProxy = E0D3DDB41C6573500049BF49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,10 +412,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControls;
+				PRODUCT_NAME = GameControls;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControls;
+				PRODUCT_NAME = GameControls;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -436,8 +443,8 @@
 				INFOPLIST_FILE = SimTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimTest.app/SimTest";
+				PRODUCT_NAME = GameControls;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameControls.app/GameControls";
 			};
 			name = Debug;
 		};
@@ -448,8 +455,8 @@
 				INFOPLIST_FILE = SimTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimTest.app/SimTest";
+				PRODUCT_NAME = GameControls;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameControls.app/GameControls";
 			};
 			name = Release;
 		};
@@ -459,7 +466,7 @@
 				INFOPLIST_FILE = SimTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GameControls;
 				TEST_TARGET_NAME = SimTest;
 				USES_XCTRUNNER = YES;
 			};
@@ -471,7 +478,7 @@
 				INFOPLIST_FILE = SimTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GameControls;
 				TEST_TARGET_NAME = SimTest;
 				USES_XCTRUNNER = YES;
 			};
@@ -480,7 +487,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E0D3DD8F1C6573500049BF49 /* Build configuration list for PBXProject "SimTest" */ = {
+		E0D3DD8F1C6573500049BF49 /* Build configuration list for PBXProject "GameControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0D3DDBA1C6573500049BF49 /* Debug */,
@@ -489,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0D3DDBC1C6573500049BF49 /* Build configuration list for PBXNativeTarget "SimTest" */ = {
+		E0D3DDBC1C6573500049BF49 /* Build configuration list for PBXNativeTarget "GameControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0D3DDBD1C6573500049BF49 /* Debug */,
@@ -498,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0D3DDBF1C6573500049BF49 /* Build configuration list for PBXNativeTarget "SimTestTests" */ = {
+		E0D3DDBF1C6573500049BF49 /* Build configuration list for PBXNativeTarget "GameControlsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0D3DDC01C6573500049BF49 /* Debug */,
@@ -507,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0D3DDC21C6573500049BF49 /* Build configuration list for PBXNativeTarget "SimTestUITests" */ = {
+		E0D3DDC21C6573500049BF49 /* Build configuration list for PBXNativeTarget "GameControlsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0D3DDC31C6573500049BF49 /* Debug */,

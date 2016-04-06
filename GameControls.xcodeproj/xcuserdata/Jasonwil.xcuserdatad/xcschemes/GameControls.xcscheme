@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E0D3DD931C6573500049BF49"
-               BuildableName = "SimTest.app"
-               BlueprintName = "SimTest"
-               ReferencedContainer = "container:SimTest.xcodeproj">
+               BuildableName = "GameControls.app"
+               BlueprintName = "GameControls"
+               ReferencedContainer = "container:GameControls.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E0D3DDA71C6573500049BF49"
-               BuildableName = "SimTestTests.xctest"
-               BlueprintName = "SimTestTests"
-               ReferencedContainer = "container:SimTest.xcodeproj">
+               BuildableName = "GameControls.xctest"
+               BlueprintName = "GameControlsTests"
+               ReferencedContainer = "container:GameControls.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E0D3DDB21C6573500049BF49"
-               BuildableName = "SimTestUITests.xctest"
-               BlueprintName = "SimTestUITests"
-               ReferencedContainer = "container:SimTest.xcodeproj">
+               BuildableName = "GameControls.xctest"
+               BlueprintName = "GameControlsUITests"
+               ReferencedContainer = "container:GameControls.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0D3DD931C6573500049BF49"
-            BuildableName = "SimTest.app"
-            BlueprintName = "SimTest"
-            ReferencedContainer = "container:SimTest.xcodeproj">
+            BuildableName = "GameControls.app"
+            BlueprintName = "GameControls"
+            ReferencedContainer = "container:GameControls.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0D3DD931C6573500049BF49"
-            BuildableName = "SimTest.app"
-            BlueprintName = "SimTest"
-            ReferencedContainer = "container:SimTest.xcodeproj">
+            BuildableName = "GameControls.app"
+            BlueprintName = "GameControls"
+            ReferencedContainer = "container:GameControls.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0D3DD931C6573500049BF49"
-            BuildableName = "SimTest.app"
-            BlueprintName = "SimTest"
-            ReferencedContainer = "container:SimTest.xcodeproj">
+            BuildableName = "GameControls.app"
+            BlueprintName = "GameControls"
+            ReferencedContainer = "container:GameControls.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
