@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E05C6CDB1C67DF61004699F3 /* ScrollingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C6CDA1C67DF61004699F3 /* ScrollingTextView.swift */; };
-		E0D3DD981C6573500049BF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D3DD971C6573500049BF49 /* AppDelegate.swift */; };
-		E0D3DD9A1C6573500049BF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D3DD991C6573500049BF49 /* ViewController.swift */; };
-		E0D3DD9D1C6573500049BF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D3DD9B1C6573500049BF49 /* Main.storyboard */; };
-		E0D3DD9F1C6573500049BF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0D3DD9E1C6573500049BF49 /* Assets.xcassets */; };
-		E0D3DDA21C6573500049BF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D3DDA01C6573500049BF49 /* LaunchScreen.storyboard */; };
-		E0D3DDAD1C6573500049BF49 /* SimTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D3DDAC1C6573500049BF49 /* SimTestTests.swift */; };
-		E0D3DDB81C6573500049BF49 /* SimTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D3DDB71C6573500049BF49 /* SimTestUITests.swift */; };
+		E05895471CB4B682000F85D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05895461CB4B682000F85D0 /* AppDelegate.swift */; };
+		E05895491CB4B692000F85D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05895481CB4B692000F85D0 /* ViewController.swift */; };
+		E058954B1CB4B6A3000F85D0 /* ScrollingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058954A1CB4B6A3000F85D0 /* ScrollingTextView.swift */; };
+		E058954D1CB4B6B1000F85D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E058954C1CB4B6B1000F85D0 /* Assets.xcassets */; };
+		E058954F1CB4B6B9000F85D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E058954E1CB4B6B9000F85D0 /* Info.plist */; };
+		E07BC7901CB4B71C000F8852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BC78E1CB4B71C000F8852 /* LaunchScreen.storyboard */; };
+		E07BC7931CB4B723000F8852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BC7911CB4B723000F8852 /* Main.storyboard */; };
+		E07BC79C1CB4B876000F8852 /* GameControlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC7981CB4B74F000F8852 /* GameControlsTests.swift */; };
+		E07BC79D1CB4B87B000F8852 /* GameControlsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC7941CB4B73E000F8852 /* GameControlsUITests.swift */; };
+		E07BC79E1CB4B87F000F8852 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E07BC7961CB4B741000F8852 /* Info.plist */; };
+		E07BC7A01CB4B886000F8852 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E07BC7991CB4B74F000F8852 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E05C6CDA1C67DF61004699F3 /* ScrollingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTextView.swift; sourceTree = "<group>"; };
+		E05895461CB4B682000F85D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GameControls/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E05895481CB4B692000F85D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = GameControls/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		E058954A1CB4B6A3000F85D0 /* ScrollingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollingTextView.swift; path = GameControls/ScrollingTextView.swift; sourceTree = SOURCE_ROOT; };
+		E058954C1CB4B6B1000F85D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GameControls/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		E058954E1CB4B6B9000F85D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GameControls/Info.plist; sourceTree = SOURCE_ROOT; };
+		E07BC78F1CB4B71C000F8852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GameControls/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		E07BC7921CB4B723000F8852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GameControls/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		E07BC7941CB4B73E000F8852 /* GameControlsUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameControlsUITests.swift; path = GameControlsUITests/GameControlsUITests.swift; sourceTree = SOURCE_ROOT; };
+		E07BC7961CB4B741000F8852 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GameControlsUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		E07BC7981CB4B74F000F8852 /* GameControlsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameControlsTests.swift; path = GameControlsTests/GameControlsTests.swift; sourceTree = SOURCE_ROOT; };
+		E07BC7991CB4B74F000F8852 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GameControlsTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		E0D3DD941C6573500049BF49 /* GameControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0D3DD971C6573500049BF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0D3DD991C6573500049BF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E0D3DD9C1C6573500049BF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E0D3DD9E1C6573500049BF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E0D3DDA11C6573500049BF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E0D3DDA31C6573500049BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0D3DDA81C6573500049BF49 /* GameControls.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControls.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0D3DDAC1C6573500049BF49 /* SimTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimTestTests.swift; sourceTree = "<group>"; };
-		E0D3DDAE1C6573500049BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0D3DDB31C6573500049BF49 /* GameControls.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControls.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0D3DDB71C6573500049BF49 /* SimTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimTestUITests.swift; sourceTree = "<group>"; };
-		E0D3DDB91C6573500049BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +82,7 @@
 		E02579991C67E1830076B3DA /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				E05C6CDA1C67DF61004699F3 /* ScrollingTextView.swift */,
+				E058954A1CB4B6A3000F85D0 /* ScrollingTextView.swift */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -87,9 +90,9 @@
 		E0D3DD8B1C6573500049BF49 = {
 			isa = PBXGroup;
 			children = (
-				E0D3DD961C6573500049BF49 /* SimTest */,
-				E0D3DDAB1C6573500049BF49 /* SimTestTests */,
-				E0D3DDB61C6573500049BF49 /* SimTestUITests */,
+				E0D3DD961C6573500049BF49 /* GameControls */,
+				E0D3DDAB1C6573500049BF49 /* GameControlsTests */,
+				E0D3DDB61C6573500049BF49 /* GameControlsUITests */,
 				E0D3DD951C6573500049BF49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,35 +107,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0D3DD961C6573500049BF49 /* SimTest */ = {
+		E0D3DD961C6573500049BF49 /* GameControls */ = {
 			isa = PBXGroup;
 			children = (
-				E0D3DD971C6573500049BF49 /* AppDelegate.swift */,
-				E0D3DD991C6573500049BF49 /* ViewController.swift */,
+				E05895461CB4B682000F85D0 /* AppDelegate.swift */,
+				E05895481CB4B692000F85D0 /* ViewController.swift */,
 				E02579991C67E1830076B3DA /* Interface */,
-				E0D3DD9B1C6573500049BF49 /* Main.storyboard */,
-				E0D3DD9E1C6573500049BF49 /* Assets.xcassets */,
-				E0D3DDA01C6573500049BF49 /* LaunchScreen.storyboard */,
-				E0D3DDA31C6573500049BF49 /* Info.plist */,
+				E058954C1CB4B6B1000F85D0 /* Assets.xcassets */,
+				E07BC7911CB4B723000F8852 /* Main.storyboard */,
+				E07BC78E1CB4B71C000F8852 /* LaunchScreen.storyboard */,
+				E058954E1CB4B6B9000F85D0 /* Info.plist */,
 			);
+			name = GameControls;
 			path = SimTest;
 			sourceTree = "<group>";
 		};
-		E0D3DDAB1C6573500049BF49 /* SimTestTests */ = {
+		E0D3DDAB1C6573500049BF49 /* GameControlsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0D3DDAC1C6573500049BF49 /* SimTestTests.swift */,
-				E0D3DDAE1C6573500049BF49 /* Info.plist */,
+				E07BC7981CB4B74F000F8852 /* GameControlsTests.swift */,
+				E07BC7991CB4B74F000F8852 /* Info.plist */,
 			);
+			name = GameControlsTests;
 			path = SimTestTests;
 			sourceTree = "<group>";
 		};
-		E0D3DDB61C6573500049BF49 /* SimTestUITests */ = {
+		E0D3DDB61C6573500049BF49 /* GameControlsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E0D3DDB71C6573500049BF49 /* SimTestUITests.swift */,
-				E0D3DDB91C6573500049BF49 /* Info.plist */,
+				E07BC7941CB4B73E000F8852 /* GameControlsUITests.swift */,
+				E07BC7961CB4B741000F8852 /* Info.plist */,
 			);
+			name = GameControlsUITests;
 			path = SimTestUITests;
 			sourceTree = "<group>";
 		};
@@ -241,9 +247,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0D3DDA21C6573500049BF49 /* LaunchScreen.storyboard in Resources */,
-				E0D3DD9F1C6573500049BF49 /* Assets.xcassets in Resources */,
-				E0D3DD9D1C6573500049BF49 /* Main.storyboard in Resources */,
+				E058954F1CB4B6B9000F85D0 /* Info.plist in Resources */,
+				E07BC7901CB4B71C000F8852 /* LaunchScreen.storyboard in Resources */,
+				E058954D1CB4B6B1000F85D0 /* Assets.xcassets in Resources */,
+				E07BC7931CB4B723000F8852 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07BC7A01CB4B886000F8852 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07BC79E1CB4B87F000F8852 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0D3DD9A1C6573500049BF49 /* ViewController.swift in Sources */,
-				E05C6CDB1C67DF61004699F3 /* ScrollingTextView.swift in Sources */,
-				E0D3DD981C6573500049BF49 /* AppDelegate.swift in Sources */,
+				E05895471CB4B682000F85D0 /* AppDelegate.swift in Sources */,
+				E05895491CB4B692000F85D0 /* ViewController.swift in Sources */,
+				E058954B1CB4B6A3000F85D0 /* ScrollingTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0D3DDAD1C6573500049BF49 /* SimTestTests.swift in Sources */,
+				E07BC79C1CB4B876000F8852 /* GameControlsTests.swift in Sources */,
+				E07BC79D1CB4B87B000F8852 /* GameControlsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0D3DDB81C6573500049BF49 /* SimTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,20 +315,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E0D3DD9B1C6573500049BF49 /* Main.storyboard */ = {
+		E07BC78E1CB4B71C000F8852 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E0D3DD9C1C6573500049BF49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E0D3DDA01C6573500049BF49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0D3DDA11C6573500049BF49 /* Base */,
+				E07BC78F1CB4B71C000F8852 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E07BC7911CB4B723000F8852 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07BC7921CB4B723000F8852 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = SimTest/Info.plist;
+				INFOPLIST_FILE = GameControls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControls;
 				PRODUCT_NAME = GameControls;
@@ -428,7 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = SimTest/Info.plist;
+				INFOPLIST_FILE = GameControls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControls;
 				PRODUCT_NAME = GameControls;
@@ -440,9 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SimTestTests/Info.plist;
+				INFOPLIST_FILE = GameControlsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControlsTests;
 				PRODUCT_NAME = GameControls;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameControls.app/GameControls";
 			};
@@ -452,9 +461,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SimTestTests/Info.plist;
+				INFOPLIST_FILE = GameControlsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControlsTests;
 				PRODUCT_NAME = GameControls;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameControls.app/GameControls";
 			};
@@ -463,9 +472,9 @@
 		E0D3DDC31C6573500049BF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SimTestUITests/Info.plist;
+				INFOPLIST_FILE = GameControlsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControlsUITests;
 				PRODUCT_NAME = GameControls;
 				TEST_TARGET_NAME = SimTest;
 				USES_XCTRUNNER = YES;
@@ -475,9 +484,9 @@
 		E0D3DDC41C6573500049BF49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SimTestUITests/Info.plist;
+				INFOPLIST_FILE = GameControlsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.SimTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilkin.GameControlsUITests;
 				PRODUCT_NAME = GameControls;
 				TEST_TARGET_NAME = SimTest;
 				USES_XCTRUNNER = YES;

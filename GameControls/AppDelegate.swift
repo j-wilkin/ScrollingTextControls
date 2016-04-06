@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SimTest
+//  GameControls
 //
 //  Created by Jason Wilkin on 2/5/16.
 //  Copyright © 2016 Jason Wilkin. All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  SimTestUITests.swift
-//  SimTestUITests
+//  GameControlsUITests.swift
+//  GameControlsUITests
 //
 //  Created by Jason Wilkin on 2/5/16.
 //  Copyright © 2016 Jason Wilkin. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class SimTestUITests: XCTestCase {
+class GameControlsUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

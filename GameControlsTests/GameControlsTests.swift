@@ -1,15 +1,15 @@
 //
-//  SimTestTests.swift
-//  SimTestTests
+//  GameControlsTests.swift
+//  GameControlsTests
 //
 //  Created by Jason Wilkin on 2/5/16.
 //  Copyright © 2016 Jason Wilkin. All rights reserved.
 //
 
 import XCTest
-@testable import SimTest
+@testable import GameControls
 
-class SimTestTests: XCTestCase {
+class GameControlsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
