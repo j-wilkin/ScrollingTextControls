@@ -12,7 +12,7 @@ import UIKit
 class ScrollingTextView: UIView {
     
     
-    @IBOutlet weak var textBox: UILabel!
+    @IBOutlet weak var textBox: UITextView!
     @IBOutlet weak var nextButton: UIButton!
     
     var lines = [String]()
@@ -22,6 +22,7 @@ class ScrollingTextView: UIView {
     
     override func awakeFromNib() {
         self.textBox.text = ""
+
     }
 
     func setLinesAndBegin(lines: [String]) {
@@ -81,7 +82,6 @@ class ScrollingTextView: UIView {
             // Ensure we are still printing the same line and that the line has not been completed
             if self.currentLineIndex == lineNumber && !lineFinished {
                 self.textBox.text = str
-                self.textBox.sizeToFit()
                 self.currentCharIndex += 1
                 self.fetchNextCharacter()
             }

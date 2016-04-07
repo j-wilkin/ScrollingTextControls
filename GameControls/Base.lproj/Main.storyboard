@@ -18,38 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there! Testing the text box..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="542" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-hT-NYh">
-                                <rect key="frame" x="30" y="469" width="541" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0k-dZ-Let">
+                                <rect key="frame" x="20" y="464" width="560" height="105"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Text box" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5tO-lc-APn">
+                                        <rect key="frame" x="5" y="5" width="550" height="95"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-q1-ZjL">
+                                        <rect key="frame" x="512" y="55" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aUL-87-gGr"/>
+                                            <constraint firstAttribute="width" constant="50" id="dqe-y3-0cc"/>
+                                        </constraints>
+                                        <state key="normal" image="caret-bottom"/>
+                                        <connections>
+                                            <action selector="nextButtonTap:" destination="sXH-fk-dhm" eventType="touchUpInside" id="0Dl-fL-gmK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="mnj-4F-e4c"/>
+                                    <constraint firstAttribute="height" constant="105" id="4PA-Rb-Qz1"/>
+                                    <constraint firstAttribute="trailing" secondItem="5tO-lc-APn" secondAttribute="trailing" constant="5" id="8bt-CB-q8A"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sjf-q1-ZjL" secondAttribute="trailing" constant="-2" id="PWF-fq-DiQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="5tO-lc-APn" secondAttribute="bottom" constant="5" id="dJS-cp-gqS"/>
+                                    <constraint firstItem="5tO-lc-APn" firstAttribute="leading" secondItem="S0k-dZ-Let" secondAttribute="leading" constant="5" id="gv4-1Z-paK"/>
+                                    <constraint firstItem="5tO-lc-APn" firstAttribute="top" secondItem="S0k-dZ-Let" secondAttribute="top" constant="5" id="kzy-zT-f31"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sjf-q1-ZjL" secondAttribute="bottom" id="zCI-Y4-Uin"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-q1-ZjL">
-                                <rect key="frame" x="532" y="519" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="aUL-87-gGr"/>
-                                    <constraint firstAttribute="width" constant="50" id="dqe-y3-0cc"/>
-                                </constraints>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextButtonTap:" destination="sXH-fk-dhm" eventType="touchUpInside" id="0Dl-fL-gmK"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.73484538610000005" green="0.73484538610000005" blue="0.73484538610000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xKb-hT-NYh" secondAttribute="bottom" constant="31" id="8OM-pl-IJU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xKb-hT-NYh" secondAttribute="trailing" constant="9" id="9V3-5x-XE0"/>
-                            <constraint firstItem="xKb-hT-NYh" firstAttribute="leading" secondItem="sXH-fk-dhm" secondAttribute="leadingMargin" constant="10" id="coY-k4-8YL"/>
-                            <constraint firstItem="Sjf-q1-ZjL" firstAttribute="bottom" secondItem="xKb-hT-NYh" secondAttribute="bottom" id="gHa-SC-qiI"/>
-                            <constraint firstItem="Sjf-q1-ZjL" firstAttribute="leading" secondItem="xKb-hT-NYh" secondAttribute="trailing" constant="-39" id="woh-yf-xmV"/>
+                            <constraint firstItem="S0k-dZ-Let" firstAttribute="leading" secondItem="sXH-fk-dhm" secondAttribute="leadingMargin" id="jxw-tS-uBN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S0k-dZ-Let" secondAttribute="bottom" constant="31" id="qOK-vM-WEg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S0k-dZ-Let" secondAttribute="trailing" id="vpw-bX-HdD"/>
                         </constraints>
                         <connections>
                             <outlet property="nextButton" destination="Sjf-q1-ZjL" id="wfX-b2-ckI"/>
-                            <outlet property="textBox" destination="xKb-hT-NYh" id="s5k-EV-Xk7"/>
+                            <outlet property="textBox" destination="5tO-lc-APn" id="bzm-pw-lJC"/>
                         </connections>
                     </view>
                     <connections>
@@ -58,6 +68,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="62" y="519"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="caret-bottom" width="16" height="16"/>
+    </resources>
 </document>
